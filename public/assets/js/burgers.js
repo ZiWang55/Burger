@@ -1,10 +1,10 @@
 // Click event to devour:
 $(function () {
   $(".change-devoured").on("click", function (event) {
-    var id = $(this).data("id");
-    var devoured = $(this).data("devoured");
+    let id = $(this).data("id");
+    let devoured = $(this).data("devoured");
 
-    var newDevouredState = {
+    let newDevouredState = {
       devoured: devoured,
     };
 
@@ -22,7 +22,7 @@ $(function () {
   $(".create-form").on("submit", function (event) {
     // PreventDefault on a submit event:
     event.preventDefault();
-    var newBurger = {
+    let newBurger = {
       burger_name: $("#ca").val().trim(),
       devoured: false,
     };
