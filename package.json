@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiWang55/Burger.git"
+  },
+  "keywords": [
+    "Burger"
+  ],
+  "author": "ZiWang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiWang55/Burger/issues"
+  },
+  "homepage": "https://github.com/ZiWang55/Burger#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
