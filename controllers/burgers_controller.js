@@ -8,7 +8,7 @@ const burger = require("../models/burger.js");
 // GET
 router.get("/", function (req, res) {
   burger.selectAll(function (data) {
-    var hbsObject = {
+    let hbsObject = {
       burgers: data,
     };
 
@@ -26,7 +26,7 @@ router.post("/api/burgers", function (req, res) {
 
 // PUT
 router.put("/api/burgers/:id", function (req, res) {
-  var condition = "id = " + req.params.id;
+  let condition = "id = " + req.params.id;
 
   burger.updateOne(req.params.id, function (result) {
     if (result.changedRows == 0) {

@@ -12,14 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // express-handlebars npm
-var exphbs = require("express-handlebars");
+let exphbs = require("express-handlebars");
 
 // express-handlebars requirement
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes for server
-var routes = require("./controllers/burgers_controller.js");
+let routes = require("./controllers/burgers_controller.js");
 // Use Routes
 app.use(routes);
 
